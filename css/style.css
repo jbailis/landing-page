@@ -3,13 +3,19 @@ body,
 .section,
 .links,
 .img-placeholder,
+.info .container,
 .footer {
     display: flex;
 }
 
+body,
+.info,
+.quote {
+    flex-direction: column;
+}
+
 body {
     font-family: Roboto;
-    flex-direction: column;
     justify-content: space-between;
     margin: 0;
     padding: 0; 
@@ -73,21 +79,81 @@ body {
     align-items: center;
 }
 
+.hero-main,
+.hero-secondary {
+    margin-bottom: 8px;
+}
+
 .hero-main {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: bolder;
-    margin-bottom: 8px;
 }
 
 .hero-secondary {
     color: #E5E7EB;
     font-size: 18px;
+}
+
+.info {
+    align-items: center;
+}
+
+.info .title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    padding: 48px;
+}
+
+.info .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding-bottom: 96px;
+}
+
+.info .item {
+    /* width must match the 'not-an-image' width */
+    width: 170px;
+}
+
+.info .not-an-image {
+    height: 150px;
+    border-radius: 16px;
+    border: 5px solid #3882f6;
     margin-bottom: 8px;
+}
+
+.info .text {
+    text-align: center;
+    font-size: 18px;
 }
 
 .quote {
     background-color: #E5E7EB;
+    gap: 16px;
+}
+
+.quote .container {
+    width: 775px;
+    align-self: center;
+    padding: 100px 0;
+}
+
+.quote .content {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: start;
+}
+
+.quote .credit {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: end;
 }
 
 button {
