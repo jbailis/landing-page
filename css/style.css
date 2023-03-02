@@ -16,7 +16,6 @@ body,
 
 body {
     font-family: Roboto;
-    justify-content: space-between;
     margin: 0;
     padding: 0; 
 }
@@ -80,7 +79,7 @@ body {
 }
 
 .hero-main,
-.hero-secondary {
+.sub-header {
     margin-bottom: 8px;
 }
 
@@ -90,7 +89,7 @@ body {
     font-weight: bolder;
 }
 
-.hero-secondary {
+.sub-header {
     color: #E5E7EB;
     font-size: 18px;
 }
@@ -156,6 +155,18 @@ body {
     text-align: end;
 }
 
+.call-to-action .wrapper {
+    background-color: #3882f6;
+    margin: 100px 0;
+    padding: 40px 85px;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    border: 5px solid #3882f6;
+    border-radius: 8px;
+}
+
+
 button {
     border-radius: 8px;
     background-color: #3882f6;
@@ -168,5 +179,12 @@ button {
 }
 
 .call-to-action button {
-    border-color: #F9FAF8;
+    border: 2px solid #F9FAF8;
+}
+
+/* FOOTER STUFF */
+.footer {
+    height: 100px;
+    align-items: center;
+    justify-content: center;
 }
